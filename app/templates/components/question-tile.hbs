@@ -1,0 +1,7 @@
+<li>"{{question.question}}" -{{question.author}}
+  {{#if notesAreShowing }}
+    <p {{action 'notesHide'}}>{{question.notes}}</p>
+  {{else}}
+    <button {{action 'notesShow'}}>Show notes</button>
+  {{/if}}
+</li>

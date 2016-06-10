@@ -3,6 +3,6 @@
 
 <ul>
   {{#each model as |question|}}
-    <li>"{{question.question}}" -{{question.author}}</li>
+    {{question-tile question=question}}
   {{/each}}
 </ul>
