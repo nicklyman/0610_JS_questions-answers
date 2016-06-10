@@ -1,4 +1,4 @@
-# **Meal Tracker**
+# **Question and Answer Message Board**
 
 #### A web app that allows a user to ask questions, answer questions, and edit questions if necessary. June 3, 2016
 
@@ -20,7 +20,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <https://github.com/nicklyman/0610_JS_questions-answers.git>` this repository
+* `git clone https://github.com/nicklyman/0610_JS_questions-answers.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
