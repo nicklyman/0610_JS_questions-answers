@@ -11,9 +11,5 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
-    update(question) {
-      question.save();
-      this.transitionTo('index');
-    },
   }
 });

@@ -10,8 +10,5 @@ export default Ember.Component.extend({
     notesHide() {
       this.set('notesAreShowing', false);
     },
-    update(question, params) {
-      this.sendAction('update', question, params);
-    },
   }
 });
