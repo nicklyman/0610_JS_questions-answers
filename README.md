@@ -20,10 +20,11 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone https://github.com/nicklyman/0610_JS_questions-answers.git` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+* In the terminal type the following git commands:
+  * `git clone https://github.com/nicklyman/0610_JS_questions-answers.git`
+* Move into the new directory 
+  * `npm install`
+  * `bower install`
 
 ## Running / Development
 
