@@ -1,6 +1,6 @@
 # **Question and Answer Message Board**
 
-#### A web app that allows a user to ask questions, answer questions, and edit questions if necessary. June 3, 2016
+#### A web app that allows a user to ask questions, answer questions, and edit questions if necessary. June 10, 2016
 
 #### By **Nick Lyman**
 
@@ -22,7 +22,7 @@ You will need the following things properly installed on your computer.
 
 * In the terminal type the following git commands:
   * `git clone https://github.com/nicklyman/0610_JS_questions-answers.git`
-* Move into the new directory 
+* Move into the new directory
   * `npm install`
   * `bower install`
 
@@ -53,25 +53,25 @@ Make use of the many generators for code, try `ember help generate` for more det
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
-  ## Known Bugs
+## Known Bugs
 
-  NONE
+NONE
 
-  ## Support and contact details
+## Support and contact details
 
-  If a bug is found, please let me know via Github. Feel free to contact me with questions or suggestions and contribute to the code.
+If a bug is found, please let me know via Github. Feel free to contact me with questions or suggestions and contribute to the code.
 
-  ## Technologies Used
+## Technologies Used
 
-  * Git
-  * Github
-  * Atom text editor
-  * JavaScript
-  * Ember 2.0 framework
-  * Node.js - including npm, bower, and sass
+* Git
+* Github
+* Atom text editor
+* JavaScript
+* Ember 2.0 framework
+* Node.js - including npm, bower, and sass
 
-  ### License
+### License
 
-  *This software is licensed under the MIT license*
+*This software is licensed under the MIT license*
 
-  Copyright (c) 2016 **Nick Lyman**
+Copyright (c) 2016 **Nick Lyman**
