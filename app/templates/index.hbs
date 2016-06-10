@@ -2,5 +2,7 @@
 <h2>Questions:</h2>
 
 <ul>
-  
+  {{#each model as |question|}}
+    <li>"{{question.question}}" -{{question.author}}</li>
+  {{/each}}
 </ul>
