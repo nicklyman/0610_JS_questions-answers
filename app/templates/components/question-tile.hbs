@@ -1,3 +1,8 @@
+<!-- Child of question.hbs -->
+<!-- Displays list of questions on index.hbs page -->
+<!-- Clicked question link goes to question.hbs -->
+<!-- Hide and show additional notes working correctly -->
+
 <li>"{{#link-to 'question' question.id}}{{question.question}}" -{{question.author}}{{/link-to}}
   {{#if notesAreShowing }}
     <p {{action 'notesHide'}}>{{question.notes}}</p>

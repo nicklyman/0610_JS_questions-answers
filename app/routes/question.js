@@ -1,3 +1,8 @@
+// Child of index.js
+// Returns individual question from database correctly
+// Correctly updates and saves question
+// DOES NOT DELETE ANSWER 
+
 import Ember from 'ember';
 
 export default Ember.Route.extend({
@@ -10,5 +15,21 @@ export default Ember.Route.extend({
       question.save();
       this.transitionTo('index');
     },
+
+    save(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var question = params.question;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return question.save();
+      });
+      this.transitionTo('question', params.question);
+    },
+
+    destroyQuestion(question) {
+      var answer_deletions = question.get('answers').map(function(answer) {
+        return answer.destroyRecord();
+      });
+    }
   }
 });

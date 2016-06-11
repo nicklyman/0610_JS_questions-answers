@@ -1,0 +1,8 @@
+<!-- Child of answer.hbs -->
+<!-- NOT CURRENTLY WORKING -->
+
+<ul>
+  {{#each answer.questions as |question|}}
+    <li>{{#link-to 'answer' answer.id}}{{answer.anserer}}{{/link-to}}</li>
+  {{/each}}
+</ul>

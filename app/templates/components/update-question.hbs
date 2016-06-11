@@ -1,3 +1,7 @@
+<!-- Displays update question form when text is clicked -->
+<!-- Child of question.hbs -->
+<!-- Displayed on question.hbs page -->
+
 {{#if updateQuestionForm}}
   <h3>Update Question</h3>
   <div>
@@ -17,9 +21,9 @@
         {{textarea value=question.notes id="notes" rows=3 class="form-control"}}
       </div>
 
-      <p class="updateQuestion"{{action 'update' question}}>Save Changes</p>
+      <p {{action 'update' question}}>Save Changes</p>
     </form>
   </div>
 {{else}}
-  <p class="updateQuestion" {{action 'updateQuestionForm'}}>Update Question</p>
+  <p {{action 'updateQuestionForm'}}>Update Question</p>
 {{/if}}

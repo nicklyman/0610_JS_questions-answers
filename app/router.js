@@ -1,3 +1,5 @@
+// Routes (pages) to be used in app
+
 import Ember from 'ember';
 import config from './config/environment';
 
@@ -9,6 +11,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('question', {path: '/question/:question_id'});
+  this.route('answer', {path: '/answer/:answer_id'});
 });
 
 export default Router;

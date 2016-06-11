@@ -1,3 +1,6 @@
+// Child of question.js
+// Correctly updates question in form
+
 import Ember from 'ember';
 
 export default Ember.Component.extend({

@@ -1,10 +1,14 @@
-<hr>
+<!-- Primary template -->
+<!-- Displays home page -->
+<!-- Parent of about, contact, question, and answer .hbs files -->
+
 <h2>Questions:</h2>
 
 {{new-question save="save"}}
 
 <ul>
-  {{#each model as |question|}}
-    {{question-tile question=question}}
+  {{#each model.questions as |question|}}
+    <li>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</li>
+    <!-- {{question-tile question=question}} -->
   {{/each}}
 </ul>
