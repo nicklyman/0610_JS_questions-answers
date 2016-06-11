@@ -16,6 +16,7 @@ export default Ember.Component.extend({
       var params = {
         answer: this.get('answer') ? this.get('answer') : "",
         answerer: this.get('answerer') ? this.get('answerer') : "",
+        question: this.get('question'),
       };
       this.set('addNewAnswer', false);
       this.sendAction('save', params);

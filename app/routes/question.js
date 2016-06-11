@@ -1,7 +1,7 @@
 // Child of index.js
 // Returns individual question from database correctly
 // Correctly updates and saves question
-// DOES NOT DELETE ANSWER 
+// DOES NOT DELETE ANSWER
 
 import Ember from 'ember';
 
@@ -30,6 +30,7 @@ export default Ember.Route.extend({
       var answer_deletions = question.get('answers').map(function(answer) {
         return answer.destroyRecord();
       });
+      this.transitionTo('index');
     }
   }
 });

@@ -1,8 +1,9 @@
 <!-- Child of answer.hbs -->
-<!-- NOT CURRENTLY WORKING -->
+<!-- Lists answers and author for each question correctly associating with the right question -->
 
 <ul>
-  {{#each answer.questions as |question|}}
-    <li>{{#link-to 'answer' answer.id}}{{answer.anserer}}{{/link-to}}</li>
+  {{#each answers as |answer|}}
+    <li>{{answer.answer}} -{{answer.answerer}}</li>
+
   {{/each}}
 </ul>

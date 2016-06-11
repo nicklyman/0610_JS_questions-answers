@@ -2,7 +2,7 @@
 <!-- Child of index.hbs -->
 <!-- Displays question after clicking question link on question-tile.hbs -->
 <!-- Has "Add Your Answer" for a new answer form, but does not save properly -->
-<!-- SHOULD ALSO DISPLAY LIST OF ANSWERS -->
+<!-- Adds new answer to list of answers for that question -->
 
 <h4>"{{model.question}}" -{{model.author}}</h4>
 
@@ -12,11 +12,12 @@
 
 <h3>Answers:</h3>
 
+{{answer-tile answers=model.answers}}
+
 {{new-answer save="save" question=model}}
 
-<ul>
+<!-- <ul>
   {{#each model.answers as |answer|}}
-    <!-- <li>{{#link-to 'answer' answer.id}}{{answer.answer}}{{/link-to}}</li> -->
-    <li>{{answer.answer}}</li>
+    <li>{{model.answers}}</li>
   {{/each}}
-</ul>
+</ul> -->
