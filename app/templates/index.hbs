@@ -8,7 +8,6 @@
 
 <ul>
   {{#each model.questions as |question|}}
-    <li>{{#link-to 'question' question.id}}{{question.question}}{{/link-to}}</li>
-    <!-- {{question-tile question=question}} -->
+    {{question-tile question=question}}
   {{/each}}
 </ul>
