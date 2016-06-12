@@ -4,12 +4,12 @@
 
 <h2>Questions:</h2>
 
-<!-- New question data is sent here from new-question.js sendAction -->
-{{new-question save="save"}}
-
 <!-- List of questions on home page come from question-tile.hbs -->
 <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question}}
   {{/each}}
 </ul>
+
+<!-- New question data is sent here from new-question.js sendAction -->
+{{new-question save="save"}}
