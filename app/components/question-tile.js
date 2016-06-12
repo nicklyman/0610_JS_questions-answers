@@ -1,12 +1,14 @@
 // Child of question.js
-// Hide and show additional notes working correctly
+// Functionality for hide and show additional notes on home page - index.hbs
 
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  //hides notes by default
   notesAreShowing: false,
 
   actions: {
+    //toggles notes on and off by clicking text
     notesShow() {
       this.set('notesAreShowing', true);
     },
